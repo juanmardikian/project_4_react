@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/*This applies from 0px to 600px --> MOBILE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html,
+body {
+  height: 100vw;
+  
+}
+
+body {
+  background: purple;
+  font-family: "Roboto", sans-serif;
+  color: #141414;
+  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 20vw;
+  background-color: purple;
+  text-align: center;
+}
+
+.Build-your-own-Portfolio {
+  display: flex;
+  align-items: center;
+  font-size: 4vw;
+}
+
+.welcome {
+  text-align: center;
+  width: 100vw;
+  height: 100vw;
+  background-color: seashell;
+}
+
+.logIn {
+  text-align: center;
+  border: #141414 solid 1px;
+  background-color: rgb(250, 246, 246);
+  font-size: 3vw;
+  color: black;
+  width: 35vw;
+  height: 7vw;
+  border-radius: 5px;
+  outline-style: none;
+  box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.1),
+    0 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 3px;
+  padding: 3px;
+}
+.Submit {
+  text-align: center;
+  border: #141414 solid 2px;
+  background-color: rgb(250, 246, 246);
+  font-size: 4vw;
+  font-weight: bold;
+  color: black;
+  width: 35vw;
+  height: 7vw;
+  border-radius: 30px;
+  outline-style: none;
+  box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.4),
+    0 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 3px;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
+
+/* This is the part belongs to the user */
+
+.UserPic {
+  margin: 0;
+  height: 30vw;
+}
+
+.userHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imputInvest {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Here is where it goes the CSS for the menu to display */
+
+.allStocks{
+  transition-duration: .3s;
+  height: 15vw;
+  text-align: center;
+}
+
+
+.allStocks.click{
+  /* transition-duration: .3s; */
+  height: 50vw;
+}
+
+.PlusText{
+  display:flex; 
+  flex-direction:row;
+  justify-content: center;
+ align-items:center;
+
+}
+
+.Plus {
+  width: 10vw;
+  margin: 2vw;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  
+}
+.Plus.click {
+  
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  
+}
+
+.PlusTitle{
+  font-size: 5vw;
+  margin: 1vw;
+  width: 20px;
+}
+
+
+
+.theLogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.logos {
+  width: 15vw;
+  margin: 1.5vw;
+  transition-duration: 0.2s;
+}
+
+.logos:hover{
+transform: scale(1.2);
+transition-duration: 0.2s;
+}
+
+.buySell {
+  width: 16vw;
+  margin: 1vw;
+  transition-duration: 0.1s;
+}
+
+.buySell:hover{
+  border-radius: 30px;
+  box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.4),
+  0 2px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+  transition-duration: 0.3s;
+}
+
+.buySell:active {
+  transform: scale(.9);
+  transition-duration: 0.1s;
+ 
+}
+
+
+
+.software {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  
+  height: 20vw;
+  background-color:purple;
+  /* background: url('./images/Stack.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  }
+
+
+/* This applies from 600px onwards --> DESKTOP */
+@media (min-width: 930px) {
+  .header {
+    height: 200px;
+  }
+
+  .logIn {
+    width: 300px;
+    height: 50px;
+    font-size: larger;
+  }
+
+  .Submit {
+    width: 300px;
+    height: 50px;
+    font-size: larger;
+  }
+
+  .UserPic {
+    margin: 0;
+    height: 200px;
+  }
+
+  .Plus {
+    width: 50px;
+    margin: 30px;
+  }
+
+  .allStocks{
+    transition-duration: .3s;
+    height: 100px;
+  }
+  
+  .PlusTitle{
+    font-size: large;
+  }
+  
+  .allStocks.click{
+    /* transition-duration: .3s; */
+    height: 450px;
+  }
+
+  .logos, .buySell{
+    width: 150px;
+    margin: 10px;
+  }
+
+}
